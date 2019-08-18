@@ -47,6 +47,14 @@
   font-weight: 600;
   color: #1636FC; }
 
+@media screen and (max-height: 700px) {
+  .Landing_Intro-Header {
+    padding-top: 80px; }
+  .LandingIntro_Right {
+    padding-top: 150px; }
+  .LandingIntro_Text {
+    line-height: 32px; } }
+
 @media screen and (max-width: 1700px) {
   .Landing_Intro-Header {
     padding-right: 0; } }

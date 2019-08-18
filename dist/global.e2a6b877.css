@@ -100,7 +100,8 @@ ul {
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  cursor: pointer; }
 
 .MobileMenuIcon-Active {
   width: 32px;
@@ -245,10 +246,12 @@ ul {
   font-weight: 400;
   font-style: normal;
   color: white;
+  white-space: nowrap;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  transition: font-size .4s ease-in; }
 
 .Constants-ConnectIcon {
   width: 60px;
@@ -264,13 +267,27 @@ ul {
   cursor: pointer;
   transition: padding-top; }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-height: 700px) {
+  .Constants_LeftFixed-Socials {
+    margin-top: 140px; } }
+
+@media screen and (max-height: 500px) {
   .Constants_LeftFixed {
     display: none; } }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
+  .Constants_LeftFixed {
+    display: none; }
   .Constants-ConnectIcon {
     display: none; } }
+
+@media screen and (max-width: 700px) {
+  .Constants-Logo {
+    font-size: 40px; } }
+
+@media screen and (max-width: 500px) {
+  .Constants-Logo {
+    font-size: 32px; } }
 
 
 /*# sourceMappingURL=/global.e2a6b877.css.map */

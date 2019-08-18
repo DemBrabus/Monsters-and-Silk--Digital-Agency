@@ -1,2 +1,2 @@
- console.log('Testing Mother Fucker');
  
+ import MobileNav from './scripts/mobileNav/mobileNav';
