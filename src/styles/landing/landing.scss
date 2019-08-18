@@ -1,11 +1,10 @@
 
-//Landing Content ------------ 
+//Landing Intro ------------------------------------
 
 .Landing_Intro {
     width: 100%;
     position: relative;
     display: flex;
-    height: calc(100vh - 100px);
 }
 
     .Landing_Intro-Header {
@@ -132,4 +131,241 @@
     }
 }
 
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//*
 
+// Landing Clients ------------------------------------
+
+.Landing_Clients {
+    width: 100%;
+    margin: 130px 0;
+    margin-bottom: 60px;
+}
+
+    .Landing_Clients-Wrap {
+        width: 100%;
+        position: relative;
+    }
+
+        .Landing_Clients-Title {
+        }
+
+        .Landing_Clients-ImageWrap {
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        .Landing_Clients-Row {
+            width: 100%;
+            height: 12vw;
+            max-height: 250px;
+            display: flex;
+        }
+            .Landing_Clients-Row1 {
+                border-bottom: 1px solid #c6c6c6;
+            }
+
+            .Landing_Clients-Box {
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 1px solid #c6c6c6;
+                position: relative;
+            }
+                .Landing_Clients-Box:last-child {
+                    border: none;
+                }
+
+                .Landing_Clients-BoxImage {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    filter: grayscale(100%);
+                    cursor: pointer;
+                }
+
+                    .Landing_Client1 {
+                        width: 50%;
+                    }
+                    .Landing_Client2 {
+                        width: 35%;
+                    }
+                    .Landing_Client3 {
+                        width: 40%;
+                    }
+                    .Landing_Client4 {
+                        width: 40%;
+                    }
+                    .Landing_Client5 {
+                        width: 40%;
+                    }
+                    .Landing_Client6 {
+                        width: 50%;
+                    }
+                    .Landing_Client7 {
+                        width: 45%;
+                    }
+                    .Landing_Client8 {
+                        width: 45%;
+                    }
+
+@media screen and (max-width: 1100px){
+    .Landing_Clients {
+        margin: 80px 0px;
+    }   
+    .Landing_Clients-ImageWrap {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .Landing_Clients-ImageWrap {
+        display: flex;
+    }
+    .Landing_Clients-Row {
+        flex-direction: column;
+        width: 50%;
+        height: 80vw;
+        max-height: 500px;
+        border: none;
+    }
+    .Landing_Clients-Row1 {
+        border-right: 1px solid #c6c6c6;
+    }
+    .Landing_Clients-Box {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-bottom: 1px solid #c6c6c6;
+    }
+}
+
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+//*
+
+// Landing Case Study ------------------------------------
+
+.Landing_CaseStudies {
+    width: 100%;
+    margin: 130px 0;
+    margin-bottom: 60px;
+}
+
+    .Landing_CaseStudies-Wrap {
+        width: 100%;
+        position: relative;
+    }
+        //Project
+        .Landing_CaseStudy-Project {
+            width: 100%;
+            height: 40vw;
+            max-height: 700px;
+            margin-bottom: 160px;
+        }
+
+            .Landing_CaseStudy-ProjectWrap {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+
+                .Landing_CaseStudy-Card {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: calc(100% - 15%);
+                    border-radius: 2px;
+                    background-color: #414141;
+                    z-index: 1;
+                }
+
+                .Landing_CaseStudy-Text {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: calc(100% - 15%);
+                    z-index: 2;
+                }
+
+                    .Landing_CaseStudy-TextWrap {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        padding: 50px 48px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        color: #FFF;
+                    }
+
+                        .Landing_CaseStudy-Image {
+                            width: 80px;
+                            margin-top: 10px;
+                        }
+
+                        .Landing_CaseStudy-Description {
+                            font-size: 42px;
+                            font-weight: 400;
+                            width: 50%;
+                            max-width: 650px;
+                        }
+
+                        .Landing_CaseStudy-Button {
+                            width: 150px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+
+                            .Landing_CaseStudy-Button-Text {
+                                font-weight: 500;
+                                font-size: 18px;
+                            }
+
+                        .Landing_CaseStudy-ProductNote {
+                            position: absolute;
+                            font-size: 18px;
+                            top: 40px;
+                            left: calc(100% - 48px);
+                            width: 300px;
+                            transform-origin: top left;
+                            transform: rotate(90deg);
+                        }
+
+                .Landing_CaseStudy-PhoneWrap {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 3;
+                }
+
+                    .Landing_CaseStudy-PhoneImage {
+                        width: 450px;
+                        position: absolute;
+                        right: 90px;
+                        top: -20px;
+                    }
+
+                            
