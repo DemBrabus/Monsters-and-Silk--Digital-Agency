@@ -195,14 +195,15 @@
 
 .Landing_CaseStudy-Project {
   width: 100%;
-  height: 40vw;
+  height: 44vw;
   max-height: 700px;
   margin-bottom: 160px; }
 
 .Landing_CaseStudy-ProjectWrap {
   width: 100%;
   height: 100%;
-  position: relative; }
+  position: relative;
+  transition: width .4s ease-in; }
 
 .Landing_CaseStudy-Card {
   position: absolute;
@@ -212,8 +213,22 @@
   width: 100%;
   height: calc(100% - 15%);
   border-radius: 2px;
-  background-color: #414141;
   z-index: 1; }
+
+.CaseStudy-Card1 {
+  background-color: #363535; }
+
+.CaseStudy-Card2 {
+  background-color: #444444; }
+
+.CaseStudy-Card3 {
+  background-color: #e6e3db; }
+
+.CaseStudy-Card4 {
+  background-color: #0A0729; }
+
+.CaseStudy-Card5 {
+  background-color: #65665B; }
 
 .Landing_CaseStudy-Text {
   position: absolute;
@@ -234,15 +249,31 @@
   justify-content: space-between;
   color: #FFF; }
 
+.Dark-Text {
+  color: #141414; }
+
 .Landing_CaseStudy-Image {
   width: 80px;
   margin-top: 10px; }
+
+.GoDaddy-CardLogo {
+  width: 130px; }
+
+.MeetUp-CardLogo {
+  width: 130px; }
+
+.Cape-CardLogo {
+  width: 130px; }
+
+.Petrolicious-CardLogo {
+  width: 165px; }
 
 .Landing_CaseStudy-Description {
   font-size: 42px;
   font-weight: 400;
   width: 50%;
-  max-width: 650px; }
+  max-width: 650px;
+  transition: font-size .4s ease-in; }
 
 .Landing_CaseStudy-Button {
   width: 150px;
@@ -267,13 +298,193 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 3; }
+  z-index: 3;
+  cursor: pointer; }
 
 .Landing_CaseStudy-PhoneImage {
   width: 450px;
   position: absolute;
   right: 90px;
-  top: -20px; }
+  top: -20px;
+  transition: all .4s ease-in; }
+
+@media screen and (max-width: 1600px) {
+  .Landing_CaseStudy-Description {
+    font-size: 32px; }
+  .Landing_CaseStudy-PhoneImage {
+    width: 25vw;
+    margin-top: 40px; }
+  .Landing_CaseStudy-ProductNote {
+    font-size: 14px; } }
+
+@media screen and (max-width: 1300px) {
+  .Landing_CaseStudy-TextWrap {
+    padding: 35px 30px; }
+  .Landing_CaseStudy-Description {
+    font-size: 24px; }
+  .Landing_CaseStudy-ProductNote {
+    top: 35px;
+    left: calc(100% - 30px);
+    width: 50%; } }
+
+@media screen and (max-width: 1100px) {
+  .Landing_CaseStudy-Project {
+    margin-bottom: 80px; }
+  .Landing_CaseStudy-Description {
+    font-size: 18px;
+    line-height: 24px; }
+  .GoDaddy-CardLogo {
+    width: 100px; }
+  .MeetUp-CardLogo {
+    width: 100px; }
+  .Cape-CardLogo {
+    width: 100px; }
+  .Petrolicious-CardLogo {
+    width: 130px; } }
+
+@media screen and (max-width: 900px) {
+  .Landing_CaseStudy-Project {
+    height: 50vw; }
+  .Landing_CaseStudy-PhoneImage {
+    margin-top: 40px;
+    width: 27vw; } }
+
+@media screen and (max-width: 800px) {
+  .Landing_CaseStudy-Project {
+    height: 60vw; }
+  .Landing_CaseStudy-TextWrap {
+    padding: 20px 25px; }
+  .Landing_CaseStudy-ProductNote {
+    top: 17px;
+    left: calc(100% - 25px);
+    font-size: 10px; }
+  .Landing_CaseStudy-PhoneImage {
+    margin-top: 40px;
+    right: 70px;
+    width: 33vw; }
+  .Landing_CaseStudy-Description {
+    font-size: 14px;
+    width: 40%; }
+  .Landing_CaseStudy-Image {
+    width: 60px; }
+  .GoDaddy-CardLogo {
+    width: 100px; }
+  .MeetUp-CardLogo {
+    width: 80px; }
+  .Cape-CardLogo {
+    width: 80px; }
+  .Petrolicious-CardLogo {
+    width: 110px; } }
+
+@media screen and (max-width: 550px) {
+  .Landing_CaseStudies-Title {
+    margin-bottom: 0px; }
+  .Landing_CaseStudy-Project {
+    height: 120vw;
+    margin-bottom: 0px; }
+  .Landing_CaseStudy-Description {
+    display: none; }
+  .Landing_CaseStudy-PhoneImage {
+    width: 45vw;
+    top: 90px;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  .Landing_CaseStudy-ProductNote {
+    font-size: 16px;
+    top: 30px; } }
+
+@media screen and (max-width: 400px) {
+  .Landing_CaseStudy-PhoneImage {
+    width: 43vw; } }
+
+.Landing_Services {
+  width: 100%;
+  padding-top: 80px; }
+
+.Landing_Services-Wrap {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.Landing_Services-Intro {
+  width: 100%;
+  display: flex; }
+
+.Landing_Services-IntroHeader {
+  width: 50%;
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  transition: font-size .5s ease-in; }
+
+.Landing_Services-IntroRight {
+  width: 50%;
+  padding-top: 160px;
+  padding-left: 40px; }
+
+.Landing_Services-Intro-Description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 40px; }
+
+.Landing_Services-BreakDown {
+  width: 100%;
+  margin-top: -100px; }
+
+.Landing_Services-BreakDown-Item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px; }
+
+.Landing_Services-Icon {
+  width: 30px;
+  margin-right: 40px; }
+
+.Landing_Services-BreakDown-Text {
+  font-size: 28px;
+  color: #969696; }
+
+@media screen and (max-width: 1700px) {
+  .Landing_Services-IntroHeader {
+    font-size: 60px; }
+  .Landing_Services-IntroRight {
+    padding-top: 100px; } }
+
+@media screen and (max-width: 1400px) {
+  .Landing_Services-IntroHeader {
+    font-size: 50px; }
+  .Landing_Services-IntroRight {
+    padding-left: 0px; } }
+
+@media screen and (max-width: 1100px) {
+  .Landing_Services-Intro {
+    flex-direction: column; }
+  .Landing_Services-IntroHeader {
+    width: 80%; }
+  .Landing_Services-IntroRight {
+    padding-top: 40px;
+    width: 100%; }
+  .Landing_Services-BreakDown {
+    margin-top: 100px; } }
+
+@media screen and (max-width: 800px) {
+  .Landing_Services-IntroHeader {
+    width: 100%; }
+  .Landing_Services-BreakDown-Text {
+    font-size: 22px; } }
+
+@media screen and (max-width: 500px) {
+  .Landing_Services-IntroHeader {
+    font-size: 40px; }
+  .Landing_Services-Intro-Description {
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .Landing_Services-BreakDown {
+    margin-top: 60px; }
+  .Landing_Services-BreakDown-Text {
+    font-size: 18px; } }
 
 
 /*# sourceMappingURL=/landing.953d3004.css.map */
