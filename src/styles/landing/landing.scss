@@ -151,6 +151,8 @@
     width: 100%;
     margin: 130px 0;
     margin-bottom: 60px;
+    opacity: 0;
+    transition: opacity .4s ease-in;
 }
 
     .Landing_Clients-Wrap {
@@ -285,10 +287,11 @@
         }
 
             .Landing_CaseStudy-ProjectWrap {
-                width: 100%;
+                width: 0%;
                 height: 100%;
                 position: relative;
-                transition: width .4s ease-in;
+                transition: width opacity .4s ease-in;
+                transition-delay: opacity .5s;
             }
 
                 .Landing_CaseStudy-Card {
