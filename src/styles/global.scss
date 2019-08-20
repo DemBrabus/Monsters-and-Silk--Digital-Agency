@@ -5,7 +5,7 @@
 }
 
 html, body {
-    width: 100vw;
+    width: 100%;
     font-family: 'montserrat', sans-serif;
     background-color: #f4f4f4;
     color: #141414;
@@ -16,6 +16,7 @@ html, body {
 }
 
     .GroundZero {
+        width: 100%;
         max-width: 1920px;
         display: flex;
         justify-content: center;
@@ -24,7 +25,8 @@ html, body {
 
         .Content_Wrap {
             width: 70%;
-            margin-top: 100px;
+            margin: 100px 0px;
+            margin-bottom: 87vh;
             z-index: 20;
             position: relative;
         }
@@ -50,12 +52,20 @@ ul {
         padding: 0 80px;
     }
 }
+
+@media screen and (max-width: 850px){
+    // .Content_Wrap {
+    //     margin-bottom: calc(100vh + 40px);
+    // }
+}
 @media screen and (max-width: 700px){
     .Content_Wrap {
         width: 100%;
         padding: 0 35px;
     }
 }
+
+
 
 // BASE ------------------------------------
 
@@ -85,7 +95,7 @@ ul {
     transition: all .4s ease-in;
 }
     .MobileHeader {
-        z-index: 1002;
+        z-index: 1003;
         display: none;
         opacity: 1;
         transition: opacity;
@@ -123,11 +133,11 @@ ul {
             }
 
             .Nav_Link:hover {
-                color: #1636FC;
+                color: #0700ff;
             }
 
             .Nav_Link-ActivePage {
-                color: #1636FC;
+                color: #0700ff;
             }
 
     .MobileMenuIcon {
@@ -204,9 +214,9 @@ ul {
 .MobileNav {
     width: 100%;
     height: 100%;
-    background-color: #1636FC;
+    background-color: #0700ff;
     position: fixed;
-    z-index: 1001;
+    z-index: 1002;
     display: none;
     opacity: 1;
     transition: opacity;
@@ -289,8 +299,352 @@ ul {
 
 // FOOTER ------------------------------------
 .Footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 87vh;
+    z-index: 1001;
+}
+
+    .Footer_Wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+        .Footer_Background {
+            position: absolute;
+            width: 100%;
+            height: 0%;
+            height: 100%;
+            bottom: 0;
+            background-color: #0700ff;
+            z-index: 2;
+            transition: height .4s ease-in;
+        }
+
+        .Footer_Constants-LeftFixed {
+            position: absolute;
+            height: 100%;
+            width: 80px;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 3;
+        }
+
+            .Footer_Constants-LeftFixedWrap {
+                width: 100%;
+                height: 100%;
+                padding: 60px 0;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+                .Footer_Constants-LeftFixed-AddressWrap {
+                transform: rotate(-90deg);
+                white-space: nowrap;
+                }
+
+                .Footer_Constants-LeftFixed-Address {
+                    font-size: 11px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #FFF;
+                }
+
+                .Footer_Constants-LeftFixed-Socials {
+                    margin-top: 270px;
+                }
+
+                    .Social1 {
+                        margin-bottom: 20px; 
+                    }
+
+        .Footer_Content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 100px 250px;
+        }
+
+            .Footer_Content-Wrap {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+                //Plain
+                .Footer_Content-Plain {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    display: flex;
+                }
+
+                    .Footer_Content-Connect {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        position: relative;
+                    }
+
+                        .Footer_Content-Connect-Header {
+                            width: 100%;
+                        }
+
+                            .Footer_Content-Connect-Header-Text {
+                                font-size: 95px;
+                                font-weight: 700;
+                                white-space: nowrap;
+                                margin-bottom: 20px;
+                                transition: font-size .4s ease-in;
+                            }
+
+                            .Footer_Content-Connect-Header-Arrow {
+                                width: 70px;
+                                margin-left: 10px;
+                            }
+                        
+                        .Footer_Content-Connect-Email {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            font-size: 18px;
+                            font-weight: 500;
+                            transition: font-size .4s ease-in;
+                        }
+                .Footer_Content-Right {
+                    display: flex;
+                    width: 50%;
+                    padding-top: 30px;
+                }
+                    .Footer_Content-Menu {
+                        width: 50%;
+                    }
+
+                        .Footer_Content-Menu-Title {
+                            font-size: 22px;
+                            font-weight: 500;
+                            margin-bottom: 50px;
+                            transition: font-size .4s ease-in;
+                        }
+
+                            .Footer_Content-Menu-List {
+
+                            }
+
+                                .Footer_Content-Menu-List-Item {
+                                    margin-bottom: 30px;
+                                }
+
+                                    .Footer_Content-Menu-List-Link {
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        color: #65665B;
+                                        transition: font-size .4s ease-in;
+                                    }
+
+                    .Footer_Content-Location {
+                        width: 50%;
+                    }
+
+                        .Footer_Content-Location-Title {
+                            font-size: 22px;
+                            font-weight: 500;
+                            margin-bottom: 50px;
+                            transition: font-size .4s ease-in;
+                        }
+
+                            .Footer_Content-Location-Address {
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #65665B;
+                                margin-bottom: 30px;
+                                transition: font-size .4s ease-in;
+                            }
+
+                            .Footer_Content-Connect-Email-Mobile {
+                                font-size: 18px;
+                                font-weight: 500;
+                                transition: font-size .4s ease-in;
+                                display: none;
+                            }
+
+
+
+
+                //White
+                .Footer_Content-White {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 4;
+                    display: flex;
+                }
+                    .Footer_Color-White {
+                        color: #FFF;
+                    }
+
+    
+
+
+@media screen and (max-width: 1400px) {
+    .Footer_Content {
+        padding: 80px 100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Footer_Content {
+        padding: 40px 80px;
+    }
+    .Footer_Content-Connect-Header-Text {
+        font-size: 70px;
+    }
+    .Footer_Content-Menu-Title {
+        font-size: 16px;
+    }
+    .Footer_Content-Location-Title {
+        font-size: 16px;
+    }
+    .Footer_Content-Menu-List-Link {
+        font-size: 14px;
+    }
+    .Footer_Content-Location-Address{
+        font-size: 14px;
+    }
+    .Footer_Constants-LeftFixed {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .Footer {
+        // height: 120vh;
+    }
+    .Footer_Content {
+        padding: 40px 60px;
+    }
+    .Footer_Content-Plain {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .Footer_Content-White {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .Footer_Content-Right {
+        width: 100%;
+    }
+    .Footer_Content-Location {
+        width: 50%;
+    }
+    .Footer_Content-Menu {
+        width: 50%;
+    }
+    .Footer_Content-Connect-Email {
+        display: none;
+    }
+    .Footer_Content-Connect-Email-Mobile {
+        display: inline-block;
+        font-size: 16px;
+    }
 
 }
+
+@media screen and (max-height: 700px){
+    .Footer_Constants-LeftFixed-Socials {
+        margin-top: 140px;
+    }
+    .Footer_Content-Connect-Header-Text {
+        font-size: 80px;
+    }
+    .Footer_Content {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .Footer_Content-White {
+        display: none;
+    }
+    .Footer_Background {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .Footer_Content {
+        padding: 40px 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Footer_Content-Connect-Header-Text {
+        font-size: 50px;
+    }
+    .Footer_Content-Connect-Header-Arrow {
+        width: 50px;
+    }
+}
+
+@media screen and (max-height: 900px) and (max-width: 400px){
+    .Footer {
+        height: 90vh;
+    }
+    .Content_Wrap {
+        margin-bottom: calc(90vh + 40px);
+    }
+}
+
+@media screen and (max-height: 750px){
+    .Footer {
+        height: 100vh;
+    }
+    .Content_Wrap {
+        margin-bottom: calc(100vh + 40px);
+    }
+}
+
+
+@media screen and (max-height: 700px){
+    .Footer {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-height: 570px){
+    .Footer {
+        height: 130vh;
+    }
+    .Content_Wrap {
+        margin-bottom: calc(130vh + 10px);
+    }
+}
+
+@media screen and (max-height: 500px){
+    .Footer {
+        height: 140vh;
+    }
+    .Content_Wrap {
+        margin-bottom: calc(140vh + 10px);
+    }
+}
+
+
+
+
+
+
 
 //*
 //*
@@ -371,7 +725,7 @@ ul {
         .Constants-ConnectIcon {
             width: 60px;
             height: 60px;
-            background-color: #1636FC;
+            background-color: #0700ff;
             position: fixed;
             bottom: 60px;
             right: 50px;
@@ -415,3 +769,24 @@ ul {
         font-size: 32px;
     }
 }
+
+
+//TEMP OTHER PAGES
+
+.Temp--Content-Wrap {
+    margin: 0;
+    padding: 0;
+}
+    .UnderConstruction-Wrap  {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20%;
+    }
+
+        .UnderConstruction {
+            font-size: 28px;
+            font-weight: 400;
+            color: rgb(137, 137, 137);
+        }
