@@ -1,0 +1,136 @@
+
+
+//Landing Intro ------------------------------------
+
+.About_Intro {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+    .About_Intro-Header {
+        width: 50%;
+        font-size: 80px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        padding-top: 120px;
+        padding-right: 50px;
+        transition: font-size .5s ease-in;
+    }
+
+        .Color-Blue {
+            color: #0700ff;
+            font-family: vox, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .Footer_Color-White {
+            color: #FFF;
+        }
+
+    .AboutIntro_Right {
+        width: 50%;
+        padding-top: 230px;
+        padding-left: 40px;
+    }
+
+        .AboutIntro_Text {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 46px;
+            color: rgb(137, 137, 137);
+            margin-bottom: 30px;
+        }
+
+        .AboutIntro_CTA {
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+            .AboutIntro_CTA-Arrow {
+                height: 100%;
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .AboutIntro_CTA-Text {
+                font-size: 18px;
+                font-weight: 600;
+                color: #0700ff;
+            }
+
+//Height
+@media screen and (max-height: 700px){
+    .About_Intro-Header {
+        padding-top: 80px;
+    }
+    .AboutIntro_Right {
+        padding-top: 150px;
+    }
+    .AboutIntro_Text {
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 1700px){
+    .About_Intro-Header {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .About_Intro-Header {
+        font-size: 80px;
+    }
+    .AboutIntro_Text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .About_Intro-Header {
+        font-size: 65px;
+    }
+    .AboutIntro_Text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .About_Intro {
+        flex-direction: column;
+    }
+    .About_Intro-Header {
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 40px;
+    }
+    .AboutIntro_Right { 
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .About_Intro-Header {
+        padding-top: 80px;
+        font-size: 55px;
+    }
+    .AboutIntro_Text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .About_Intro-Header {
+        padding-top: 55px;
+        font-size: 47px;
+    }
+    .AboutIntro_Text {
+        font-size: 18px;
+        line-height: 40px;
+    }
+}

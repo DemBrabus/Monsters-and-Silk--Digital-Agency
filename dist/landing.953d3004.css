@@ -1,3 +1,40 @@
+.Landing_Loading-In {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #0700ff;
+  z-index: 10006;
+  transition: left; }
+
+.Landing_Loading-In-Wrap {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.Landing_Loading-In-Percent {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  opacity: 1;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  transition: opacity; }
+
+.Landing_Cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  z-index: 10005;
+  display: none; }
+
 .Landing_Intro {
   width: 100%;
   position: relative;
@@ -103,7 +140,6 @@
   width: 100%;
   margin: 130px 0;
   margin-bottom: 60px;
-  opacity: 0;
   transition: opacity .4s ease-in; }
 
 .Landing_Clients-Wrap {
@@ -205,11 +241,18 @@
   margin-bottom: 160px; }
 
 .Landing_CaseStudy-ProjectWrap {
-  width: 0%;
+  width: 100%;
   height: 100%;
-  position: relative;
-  transition: width opacity .4s ease-in;
-  transition-delay: opacity .5s; }
+  position: relative; }
+
+.Landing_CaseStudy-Project-Cover {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  transition: left .8s ease-in;
+  z-index: 5; }
 
 .Landing_CaseStudy-Card {
   position: absolute;
@@ -297,6 +340,7 @@
   top: 40px;
   left: calc(100% - 48px);
   width: 300px;
+  white-space: nowrap;
   transform-origin: top left;
   transform: rotate(90deg); }
 
@@ -422,12 +466,15 @@
   font-size: 70px;
   font-weight: 600;
   letter-spacing: -1px;
-  transition: font-size .5s ease-in; }
+  opacity: 0;
+  transition: all .5s ease-in; }
 
 .Landing_Services-IntroRight {
   width: 50%;
   padding-top: 160px;
-  padding-left: 40px; }
+  padding-left: 40px;
+  opacity: 0;
+  transition: all .5s ease-in; }
 
 .Landing_Services-Intro-Description {
   font-size: 20px;
@@ -437,7 +484,9 @@
 
 .Landing_Services-BreakDown {
   width: 100%;
-  margin-top: -100px; }
+  margin-top: -100px;
+  opacity: 0;
+  transition: all .5s ease-in; }
 
 .Landing_Services-BreakDown-Item {
   display: flex;

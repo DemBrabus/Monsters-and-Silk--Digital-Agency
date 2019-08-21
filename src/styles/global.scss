@@ -46,6 +46,10 @@ ul {
     margin-bottom: 60px;
 }
 
+.Active_Page {
+    color: #0700ff;
+}
+
 @media screen and (max-width: 1100px){
     .Content_Wrap {
         width: 100%;
@@ -84,6 +88,9 @@ ul {
 
 .Header {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     max-width: 1920px;
     height: 170px;
@@ -92,8 +99,19 @@ ul {
     align-items: center;
     padding: 0 80px;
     z-index: 1000;
-    transition: all .4s ease-in;
+    transition: all 1s ease-in;
+    transition: opacity ease-in;
 }
+    .nav-up {
+    top: -40px;
+    }
+
+    //Page-Specific --
+    .About-Header {
+        opacity: 1;
+        top: 0;
+    }
+
     .MobileHeader {
         z-index: 1003;
         display: none;
@@ -305,6 +323,7 @@ ul {
     right: 0;
     width: 100%;
     height: 87vh;
+    overflow: hidden;
     z-index: 1001;
 }
 
@@ -317,12 +336,11 @@ ul {
         .Footer_Background {
             position: absolute;
             width: 100%;
-            height: 0%;
             height: 100%;
-            bottom: 0;
+            bottom: -100%;
             background-color: #0700ff;
             z-index: 2;
-            transition: height .4s ease-in;
+            transition: bottom .8s ease-in;
         }
 
         .Footer_Constants-LeftFixed {
@@ -451,6 +469,9 @@ ul {
                                         color: #65665B;
                                         transition: font-size .4s ease-in;
                                     }
+                                        .Footer_Content-Menu-List-Link:hover {
+                                            color: #141414;
+                                        }
 
                     .Footer_Content-Location {
                         width: 50%;
@@ -488,6 +509,9 @@ ul {
                     height: 100%;
                     z-index: 4;
                     display: flex;
+                    opacity: 0;
+                    transition: opacity .6s ease-in;
+                    transition-delay: .5s;
                 }
                     .Footer_Color-White {
                         color: #FFF;
@@ -528,7 +552,10 @@ ul {
 
 @media screen and (max-width: 850px) {
     .Footer {
-        // height: 120vh;
+        height: 120vh;
+    }
+    .Content_Wrap {
+        margin-bottom: calc(120vh + 40px);
     }
     .Footer_Content {
         padding: 40px 60px;
@@ -597,14 +624,7 @@ ul {
     }
 }
 
-@media screen and (max-height: 900px) and (max-width: 400px){
-    .Footer {
-        height: 90vh;
-    }
-    .Content_Wrap {
-        margin-bottom: calc(90vh + 40px);
-    }
-}
+
 
 @media screen and (max-height: 750px){
     .Footer {
@@ -615,12 +635,30 @@ ul {
     }
 }
 
-
-@media screen and (max-height: 700px){
+@media screen and (max-height: 900px) and (max-width: 400px){
     .Footer {
         height: 120vh;
     }
+    .Content_Wrap {
+        margin-bottom: calc(120vh + 40px);
+    }
 }
+
+@media screen and (max-height: 550px) and (max-width: 850px){
+    .Footer {
+        height: 130vh;
+    }
+    .Content_Wrap {
+        margin-bottom: calc(130vh + 40px);
+    }
+}
+
+
+// @media screen and (max-height: 700px){
+//     .Footer {
+//         height: 120vh;
+//     }
+// }
 
 @media screen and (max-height: 570px){
     .Footer {
@@ -639,6 +677,8 @@ ul {
         margin-bottom: calc(140vh + 10px);
     }
 }
+
+
 
 
 
@@ -734,8 +774,19 @@ ul {
             align-items: center;
             box-shadow: 5px 5px 10px rgba(22, 53, 252, 0.2);
             cursor: pointer;
+            z-index: 999;
             transition: padding-top;
         }
+            .ConnectIconBG {
+                background-color: transparent;
+                box-shadow: none;
+            }
+            #ConnectIconWhite{
+
+            }
+            #ConnectIconBlue{
+                display: none;
+            }
 
 @media screen and (max-height: 700px){
     .Constants_LeftFixed-Socials {

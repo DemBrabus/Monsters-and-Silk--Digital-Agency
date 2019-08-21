@@ -1,98 +1,208 @@
-import { TweenMax, TweenLite, TimelineMax } from 'gsap/all';
+import { TweenMax, TweenLite, TimelineMax, Expo, Power1 } from 'gsap/all';
 import ScrollMagic from "scrollmagic";
 import "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap"; 
-import "scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators"; 
+import "scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators";
 
+//Landing Animations
+
+//Variables ------
+
+    //Landing Intro
+    const LandingLoading = document.getElementById('Landing_Loading-In');
+    const LandingCover = document.getElementById('Landing_Cover');
+    const Header = document.getElementById('Header');
+    const ConstantAddress = document.getElementById('Constants_LeftFixed-Address');
+    const ConstantSocials = document.getElementById('Constants_LeftFixed-Socials');
+    const ConstantConnectIcon = document.getElementById('Constants-ConnectIcon');
+    const LandingIntroHeader = document.getElementById('Landing_Intro-Header');
+    const LandingIntroRight = document.getElementById('LandingIntro_Right');
+    const Clients = document.getElementById('Landing_Clients');
+    const LoadingPercent = document.getElementById('Landing_Loading-In-Percent');
+    
+
+//Variables ------
+
+
+
+//Pure GSAP -------- ------- ----- ---- --- -- -
+
+    //Intro Scene
+    const LandingIntroTl = new TimelineMax();
+    LandingIntroTl
+        //Hide All
+        .add('Init')
+            .set(Header, {opacity: 0, y: 50}, 'Init')
+            .set(ConstantAddress, {opacity: 0, x: -50}, 'Init')
+            .set(ConstantSocials, {opacity: 0, y: 50}, 'Init')
+            .set(ConstantConnectIcon, {opacity: 0, y: 50}, 'Init')
+            .set(LandingIntroHeader, {opacity: 0, y: 50}, 'Init')
+            .set(LandingIntroRight, {opacity: 0, y: 50}, 'Init')
+            .set(Clients, {opacity: 0})
+        //Loading
+            .to(LandingLoading, 1.5, {left: 0, ease: Power1.easeInOut, delay: .4})
+            .set(LandingCover, {display: 'none'})
+            .to(LoadingPercent, .5, {opacity: 0, delay: .3})
+            .to(LandingLoading, .8, {top: '-100%', delay: .3, ease: Expo.easeInOut})
+            .set(LandingLoading, {display: 'none'})
+        //In
+        .add('wave1')
+            .to(Header, .6, {opacity: 1, y: 0, delay: .5, ease: Power1.easeInOut}, 'wave1')
+            .to(LandingIntroHeader, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.7')
+            .to(LandingIntroRight, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.9')
+            .to(ConstantAddress, 1, {opacity: 1, x: 0, ease: Power1.easeInOut}, '-=.8')
+            .to(ConstantSocials, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.8')
+            .to(ConstantConnectIcon, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.9')
+            .to(Clients, 1, {opacity: 1}, '-=1.3')
+            ;
+
+            // LandingIntroTl.pause();
+
+
+
+
+
+
+
+
+
+
+
+
+//ScrollMagic -------- ------- ----- ---- --- -- -
 
 const controller = new ScrollMagic.Controller();
 
+//Scenes --------------
+
+//Projects ------ 
+    //Project1 -------
+        const LandingProject1Scene = new ScrollMagic.Scene({
+            triggerElement: '#LandingProject1',
+            reverse: false,
+            triggerHook: .65,
+        })
+        .setClassToggle('#Landing_CaseStudy-Project-Cover1', 'Slide-Right')
+        // .addIndicators({
+        //     name: 'Project1',
+        //     colorTrigger: 'black',
+        //     indent: 0,
+        //     colorStart: 'green',
+        //     colorEnd: 'pink'
+        // })
+        .addTo(controller);
+
+    //Project2 -------
+        const LandingProject2Scene = new ScrollMagic.Scene({
+            triggerElement: '#LandingProject2',
+            reverse: false,
+            triggerHook: .65,
+        })
+        .setClassToggle('#Landing_CaseStudy-Project-Cover2', 'Slide-Right')
+        // .addIndicators({
+        //     name: 'Project2',
+        //     colorTrigger: 'black',
+        //     indent: 0,
+        //     colorStart: 'green',
+        //     colorEnd: 'pink'
+        // })
+        .addTo(controller);
+
+    //Project3 -------
+        const LandingProject3Scene = new ScrollMagic.Scene({
+            triggerElement: '#LandingProject3',
+            reverse: false,
+            triggerHook: .65,
+        })
+        .setClassToggle('#Landing_CaseStudy-Project-Cover3', 'Slide-Right')
+        // .addIndicators({
+        //     name: 'Project3',
+        //     colorTrigger: 'black',
+        //     indent: 0,
+        //     colorStart: 'green',
+        //     colorEnd: 'pink'
+        // })
+        .addTo(controller);
+
+    //Project4 -------
+        const LandingProject4Scene = new ScrollMagic.Scene({
+            triggerElement: '#LandingProject4',
+            reverse: false,
+            triggerHook: .65,
+        })
+        .setClassToggle('#Landing_CaseStudy-Project-Cover4', 'Slide-Right')
+        // .addIndicators({
+        //     name: 'Project4',
+        //     colorTrigger: 'black',
+        //     indent: 0,
+        //     colorStart: 'green',
+        //     colorEnd: 'pink'
+        // })
+        .addTo(controller);
+
+    //Project5 -------
+        const LandingProject5Scene = new ScrollMagic.Scene({
+            triggerElement: '#LandingProject5',
+            reverse: false,
+            triggerHook: .65,
+        })
+        .setClassToggle('#Landing_CaseStudy-Project-Cover5', 'Slide-Right')
+        // .addIndicators({
+        //     name: 'Project5',
+        //     colorTrigger: 'black',
+        //     indent: 0,
+        //     colorStart: 'green',
+        //     colorEnd: 'pink'
+        // })
+        .addTo(controller);
 
 
-const testScene = new ScrollMagic.Scene({
-//triggerElement - when the animation starts, we can also add a specific element within the element to start the animation
-    // triggerElement: '#Landing_Clients img',
-    triggerElement: '#Landing_Clients',
+//Services --------
 
-//duration - set when the animation is taken off
-    // duration: 300-px OR '100%'-100vh
+    //Header
+        const LandingServicesIntroScene = new ScrollMagic.Scene({
+            triggerElement: '#Landing_Services-IntroHeader',
+            reverse: false,
+            triggerHook: .85
+        })
+        .setClassToggle('#Landing_Services-IntroHeader', 'Fade-In')
+        // .addIndicators({
+        //         name: 'ServicesHeader',
+        //         colorTrigger: 'black',
+        //         indent: 0,
+        //         colorStart: 'green',
+        //         colorEnd: 'pink'
+        //     })
+        .addTo(controller);
 
-//reverse - if an animation is taken off on scroll up
-    reverse: false,
+    //Description
+        const LandingServicesDescriptionScene = new ScrollMagic.Scene({
+            triggerElement: '#Landing_Services-IntroHeader',
+            reverse: false,
+            triggerHook: .65
+        })
+        .setClassToggle('#Landing_Services-IntroRight', 'Fade-In')
+        // .addIndicators({
+        //         name: 'ServicesHeader',
+        //         colorTrigger: 'black',
+        //         indent: 0,
+        //         colorStart: 'green',
+        //         colorEnd: 'pink'
+        //     })
+        .addTo(controller);
 
-//triggerHook - determine when the animation starts
-    triggerHook: 0.8,
-})
-.setClassToggle('#Landing_Clients', 'fade-in')
-.addIndicators({
-    name: 'Clients',
-    colorTrigger: 'black',
-    indent: 0,
-    colorStart: 'green',
-    colorEnd: 'pink'
-})
-.addTo(controller);
-
-
-//Projects Test
-
-// const Project1Scene = new ScrollMagic.Scene({
-//     triggerElement: '#Project1Wrap',
-//     reverse: false,
-//     triggerHook: 0.4
-// })
-// .setClassToggle('#Project1Wrap', 'Expand')
-// .addIndicators({
-//     name: 'Project',
-//     colorTrigger: 'black',
-//     indent: 0,
-//     colorStart: 'green',
-//     colorEnd: 'pink'
-// })
-// .addTo(controller);
-
-
-
-//same animation for different elements
-    // we can do it manual and create a scene for eahc one or loop through with .forEach
-
-// const controller = new ScrollMagic.Controller();
-//     document.querySelectorAll('.Section').forEach(function(){
-//         const testScene = new ScrollMagic.Scene({
-//             triggerElement: this.children[0],
-//             duration: '90%',
-//             reverse: true, //Default
-//             triggerHook: 0.8,
-//         })
-//         .setClassToggle(this, 'fade-in')
-//         .addIndicators({
-//             name: 'Clients',
-//             colorTrigger: 'black',
-//             indent: 0,
-//             colorStart: 'green',
-//             colorEnd: 'pink'
-//         })
-//         .addTo(controller);
-//     });
-
-
-
-// //For GSAP Animations
-// const Project1 = document.getElementById('Project1wrap');
-// console.log(Project1Wrap);
-
-// const tl = new TimelineMax();
-//     tl
-//         .fromTo(Project1, 1, {width: '0%'}, {width: '100%'})
-
-// const gsapTest = new ScrollMagic.Scene({
-//     triggerElement: '#Project1Wrap',
-//     reverse: false,
-//     triggerHook: 0.8
-// })
-// .setTween(tl)
-// .addIndicators()
-// .addTo(controller);
-
-
-
+    //Breakdown
+        const LandingServicesBreakdownScene = new ScrollMagic.Scene({
+            triggerElement: '#Landing_Services-BreakDown',
+            reverse: false,
+            triggerHook: .8
+        })
+        .setClassToggle('#Landing_Services-BreakDown', 'Fade-In')
+        // .addIndicators({
+        //         name: 'ServicesHeader',
+        //         colorTrigger: 'black',
+        //         indent: 0,
+        //         colorStart: 'green',
+        //         colorEnd: 'pink'
+        //     })
+        .addTo(controller);
 
