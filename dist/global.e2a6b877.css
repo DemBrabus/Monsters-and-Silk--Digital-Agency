@@ -42,6 +42,15 @@ ul {
 .Active_Page {
   color: #0700ff; }
 
+.Color-Blue {
+  color: #0700ff;
+  font-family: vox, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+.Color-Black {
+  color: #141414; }
+
 @media screen and (max-width: 1100px) {
   .Content_Wrap {
     width: 100%;
@@ -57,6 +66,7 @@ ul {
   top: 0;
   left: 0;
   right: 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 1920px;
   height: 170px;
@@ -70,10 +80,6 @@ ul {
 
 .nav-up {
   top: -40px; }
-
-.About-Header {
-  opacity: 1;
-  top: 0; }
 
 .MobileHeader {
   z-index: 1003;

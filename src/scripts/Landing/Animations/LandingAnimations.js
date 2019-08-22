@@ -3,6 +3,10 @@ import ScrollMagic from "scrollmagic";
 import "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap"; 
 import "scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators";
 
+
+(function(){
+
+
 //Landing Animations
 
 //Variables ------
@@ -10,14 +14,16 @@ import "scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators";
     //Landing Intro
     const LandingLoading = document.getElementById('Landing_Loading-In');
     const LandingCover = document.getElementById('Landing_Cover');
-    const Header = document.getElementById('Header');
-    const ConstantAddress = document.getElementById('Constants_LeftFixed-Address');
-    const ConstantSocials = document.getElementById('Constants_LeftFixed-Socials');
-    const ConstantConnectIcon = document.getElementById('Constants-ConnectIcon');
+    const LandingLoadingPercent = document.getElementById('Landing_Loading-In-Percent');
+
+    const LandingHeader = document.getElementById('Landing_Header');
+    const LandingConstantAddress = document.getElementById('Landing-Constants_LeftFixed-Address');
+    const LandingConstantSocials = document.getElementById('Landing-Constants_LeftFixed-Socials');
+    const LandingConstantConnectIcon = document.getElementById('Landing-Constants-ConnectIcon');
     const LandingIntroHeader = document.getElementById('Landing_Intro-Header');
     const LandingIntroRight = document.getElementById('LandingIntro_Right');
-    const Clients = document.getElementById('Landing_Clients');
-    const LoadingPercent = document.getElementById('Landing_Loading-In-Percent');
+    const LandingClients = document.getElementById('Landing_Clients');
+    
     
 
 //Variables ------
@@ -31,31 +37,61 @@ import "scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators";
     LandingIntroTl
         //Hide All
         .add('Init')
-            .set(Header, {opacity: 0, y: 50}, 'Init')
-            .set(ConstantAddress, {opacity: 0, x: -50}, 'Init')
-            .set(ConstantSocials, {opacity: 0, y: 50}, 'Init')
-            .set(ConstantConnectIcon, {opacity: 0, y: 50}, 'Init')
+            .set(LandingHeader, {opacity: 0, y: 50}, 'Init')
+            .set(LandingConstantAddress, {opacity: 0, x: -50}, 'Init')
+            .set(LandingConstantSocials, {opacity: 0, y: 50}, 'Init')
+            .set(LandingConstantConnectIcon, {opacity: 0, y: 50}, 'Init')
             .set(LandingIntroHeader, {opacity: 0, y: 50}, 'Init')
             .set(LandingIntroRight, {opacity: 0, y: 50}, 'Init')
-            .set(Clients, {opacity: 0})
+            .set(LandingClients, {opacity: 0})
         //Loading
             .to(LandingLoading, 1.5, {left: 0, ease: Power1.easeInOut, delay: .4})
             .set(LandingCover, {display: 'none'})
-            .to(LoadingPercent, .5, {opacity: 0, delay: .3})
+            .to(LandingLoadingPercent, .5, {opacity: 0, delay: .3})
             .to(LandingLoading, .8, {top: '-100%', delay: .3, ease: Expo.easeInOut})
             .set(LandingLoading, {display: 'none'})
         //In
         .add('wave1')
-            .to(Header, .6, {opacity: 1, y: 0, delay: .5, ease: Power1.easeInOut}, 'wave1')
+            .to(LandingHeader, .6, {opacity: 1, y: 0, delay: .5, ease: Power1.easeInOut}, 'wave1')
             .to(LandingIntroHeader, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.7')
             .to(LandingIntroRight, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.9')
-            .to(ConstantAddress, 1, {opacity: 1, x: 0, ease: Power1.easeInOut}, '-=.8')
-            .to(ConstantSocials, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.8')
-            .to(ConstantConnectIcon, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.9')
-            .to(Clients, 1, {opacity: 1}, '-=1.3')
+            .to(LandingConstantAddress, 1, {opacity: 1, x: 0, ease: Power1.easeInOut}, '-=.8')
+            .to(LandingConstantSocials, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.8')
+            .to(LandingConstantConnectIcon, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.9')
+            .to(LandingClients, 1, {opacity: 1}, '-=1.3')
             ;
 
             // LandingIntroTl.pause();
+    // //Intro Scene
+    // const LandingIntroTl = new TimelineMax();
+    // LandingIntroTl
+    //     //Hide All
+    //     .add('Init')
+    //         .set(LandingHeader, {opacity: 0, y: 50}, 'Init')
+    //         .set(LandingConstantAddress, {opacity: 0, x: -50}, 'Init')
+    //         .set(LandingConstantSocials, {opacity: 0, y: 50}, 'Init')
+    //         .set(LandingConstantConnectIcon, {opacity: 0, y: 50}, 'Init')
+    //         .set(LandingIntroHeader, {opacity: 0, y: 50}, 'Init')
+    //         .set(LandingIntroRight, {opacity: 0, y: 50}, 'Init')
+    //         .set(LandingClients, {opacity: 0})
+    //     //Loading
+    //         .to(LandingLoading, 1.5, {left: 0, ease: Power1.easeInOut, delay: .4})
+    //         .set(LandingCover, {display: 'none'})
+    //         .to(LandingLoadingPercent, .5, {opacity: 0, delay: .3})
+    //         .to(LandingLoading, .8, {top: '-100%', delay: .3, ease: Expo.easeInOut})
+    //         .set(LandingLoading, {display: 'none'})
+    //     //In
+    //     .add('wave1')
+    //         .to(LandingHeader, .6, {opacity: 1, y: 0, delay: .5, ease: Power1.easeInOut}, 'wave1')
+    //         .to(LandingIntroHeader, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.7')
+    //         .to(LandingIntroRight, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.9')
+    //         .to(LandingConstantAddress, 1, {opacity: 1, x: 0, ease: Power1.easeInOut}, '-=.8')
+    //         .to(LandingConstantSocials, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.8')
+    //         .to(LandingConstantConnectIcon, 1, {opacity: 1, y: 0, ease: Power1.easeInOut}, '-=.9')
+    //         .to(LandingClients, 1, {opacity: 1}, '-=1.3')
+    //         ;
+
+    //         // LandingIntroTl.pause();
 
 
 
@@ -68,7 +104,7 @@ import "scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators";
 
 
 
-//ScrollMagic -------- ------- ----- ---- --- -- -
+// ScrollMagic -------- ------- ----- ---- --- -- -
 
 const controller = new ScrollMagic.Controller();
 
@@ -206,3 +242,4 @@ const controller = new ScrollMagic.Controller();
         //     })
         .addTo(controller);
 
+}());

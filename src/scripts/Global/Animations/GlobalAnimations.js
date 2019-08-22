@@ -4,40 +4,21 @@ import ScrollMagic from "scrollmagic";
 import "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap"; 
 import "scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators";
 
+
+
+
 //Global Animations
+(function(){
+
+
 
 //Variables ------
 
-    const ConnectIcon = document.getElementById('Constants-ConnectIcon');
+    const ConnectIcon = document.getElementById('Landing-Constants-ConnectIcon');
     const ConnectIconWhite = document.getElementById('ConnectIconWhite');
     const ConnectIconBlue = document.getElementById('ConnectIconBlue');
 
 //Variables ------
-
-
-// //Nav
-
-const Header = document.getElementById('Header');
-    const HideHeaderTl = new TimelineMax();
-        HideHeaderTl
-            .set(Header, {top: 0})
-            .to(Header, 1, {top: '-100%', ease: Power2.easeIn});
-        HideHeaderTl.pause();
-
-   var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-        HideHeaderTl.reverse();
-  } else {
-    HideHeaderTl.play();
-  }
-  prevScrollpos = currentScrollPos;
-}
-
-
-
-
 
 
 
@@ -71,19 +52,6 @@ window.onscroll = function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //ScrollMagic -------- ------- ----- ---- --- -- -
 
 const controller = new ScrollMagic.Controller();
@@ -91,11 +59,15 @@ const controller = new ScrollMagic.Controller();
 //Scenes --------------
 
 //Footer -------
+
+(function(){
+
+
     //Background
         const FooterBackgroundScene = new ScrollMagic.Scene({
             triggerElement: '#Footer',
             // reverse: false,
-            triggerHook: .4,
+            triggerHook: .68,
         })
         .setClassToggle('#Footer_Background', 'Slide-Up')
         .addTo(controller);
@@ -104,11 +76,11 @@ const controller = new ScrollMagic.Controller();
         const FooterWhiteTextScene = new ScrollMagic.Scene({
             triggerElement: '#Footer',
             // reverse: false,
-            triggerHook: .42,
+            triggerHook: .65,
         })
         .setClassToggle('#Footer_Content-White', 'Fade-In')
         .addTo(controller);
 
+}());
 
-
-        
+}());

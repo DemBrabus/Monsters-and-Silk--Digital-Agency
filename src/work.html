@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://use.typekit.net/szi5bmn.css">
     <link rel="stylesheet" href="styles/global.scss">
     <link rel="stylesheet" href="styles/work/work.scss">
+    <link rel="stylesheet" href="styles/Animations/Animations.scss">
     <title>Monsters & Silk | Work</title>
 </head>
 <body>
     <div class="GroundZero">
 
         <!-- Navigation -->
-        <header class="Header">
+        <header class="Header" id="Header">
             <a href="./index.html" class="SiteLogo">monsters & silk</a>
             <nav class="Header_Nav">
                 <a href="./about.html" class="Nav_Link">About</a>
@@ -62,16 +63,22 @@
         </div>
 
         <!-- Constants -->
+            <!-- Connect Icon -->
+            <a href="./contact.html" class="Constants-ConnectIcon" id="Landing-Constants-ConnectIcon">
+                <img src="./assets/ConnectIcon.svg" alt="Mail Icon" id="ConnectIconWhite">
+                <img src="./assets/ConnectIconBlue.svg" alt="Mail Icon" id="ConnectIconBlue">
+            </a>
+
         <div class="Constants">
             <!-- Left Fixed -->
             <div class="Constants_LeftFixed">
                 <div class="Constants_LeftFixedWrap">
                     <div class="Constants_LeftFixed-AddressWrap">
-                        <p class="Constants_LeftFixed-Address">
+                        <p class="Constants_LeftFixed-Address" id="Constants_LeftFixed-Address">
                             26 Broadway, New York, NY
                         </p>
                     </div>
-                    <div class="Constants_LeftFixed-Socials">
+                    <div class="Constants_LeftFixed-Socials" id="Constants_LeftFixed-Socials">
                         <div class="Social1">
                             <a href="">
                                 <img src="./assets/InstagramIcon.svg" alt="">
@@ -85,29 +92,348 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Center Logo -->
             <p class="Constants-Logo">
                 Monsters & Silk
             </p>
-
-            <!-- Connect Icon -->
-            <a href="./contact.html" class="Constants-ConnectIcon">
-                <img src="./assets/ConnectIcon.svg" alt="">
-            </a>
             
         </div>
 
         <!--Content Wrap -->
-        <div class="Content_Wrap Temp--Content-Wrap">
+        <div class="Content_Wrap">
 
-            <div class="UnderConstruction-Wrap">
-                <p class="UnderConstruction">Under Construction.</p>
-                <p class="UnderConstruction">Stay Tuned :)</p>
+
+            <!-- Work -->
+            <p class="Work-Title" id="Work_Work-Title">
+                Our<span class="Color-Blue"> work</span>
+            </p>
+
+            
+            <div class="Work_Projects">
+                <div class="Work_Projects-Wrap">
+
+                    <!-- Section1 -->
+                    <div class="Work_Projects-Section">
+                        <div class="Work_Projects-Project Project1">
+                            <a href="./Project.html" class="Work_Projects-Project-Link">
+                                <div class="Work_Projects-Project-Wrap">
+                                    <img src="./assets/Work/Phones/Pax-Phoe-min.png" alt="PhoneImage" class="Work_Projects-Project-Phone">
+
+                                    <img src="./assets/Clients/Pax-logo-min.png" alt="Arrow Right" class="Work_Projects-Project-Logo Work-Pax-Logo">
+
+                                    <img src="./assets/ArrowRightWhite.svg" alt="Arrow Right" class="Work_Projects-Project-Arrow">
+
+                                    <p class="Work-Projects-Project-ViewWork">View work</p>
+
+                                    <p class="Work_Projects-Project-Description">
+                                        Hardware & Software
+                                        <br>
+                                        Mobile Redesign
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="Work_Projects-Project Project2">
+                            <a href="./Project.html" class="Work_Projects-Project-Link">
+                                <div class="Work_Projects-Project-Wrap">
+
+                                    <img src="./assets/Work/Phones/meetup-phone-case-study.png" alt="PhoneImage" class="Work_Projects-Project-Phone">
+
+                                    <img src="./assets/Clients/meetup-logo.png" alt="Arrow Right" class="Work_Projects-Project-Logo Work-MeetUp-Logo">
+
+                                    <img src="./assets/ArrowRightBlack.svg" alt="Arrow Right" class="Work_Projects-Project-Arrow">
+
+                                    <p class="Work-Projects-Project-ViewWork Color-Black">View work</p>
+
+                                    <p class="Work_Projects-Project-Description Color-Black">
+                                        On Demand
+                                        <br>
+                                        New Product
+                                    </p>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Section2 -->
+                    <div class="Work_Projects-Section">
+                        <div class="Work_Projects-Project Project3">
+                            <a href="./Project.html" class="Work_Projects-Project-Link">
+                                <div class="Work_Projects-Project-Wrap">
+
+                                    <img src="./assets/Work/Phones/cape_background_card.png" alt="PhoneImage" class="Work_Projects-Project-Phone">
+
+                                    <img src="./assets/Clients/cape-logo.png" alt="Arrow Right" class="Work_Projects-Project-Logo Work-Cape-Logo">
+
+                                    <img src="./assets/ArrowRightWhite.svg" alt="Arrow Right" class="Work_Projects-Project-Arrow">
+
+                                    <p class="Work-Projects-Project-ViewWork ">View work</p>
+                                    <p class="Work_Projects-Project-Description ">
+
+                                        Software & Technology
+                                        <br>
+                                        Web & Mobile Redesign
+                                    </p>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="Work_Projects-Project Project4">
+                            <a href="./Project.html" class="Work_Projects-Project-Link">
+                                <div class="Work_Projects-Project-Wrap">
+
+                                    <img src="./assets/Work/Phones/PetroliciousHeaderPhone.png" alt="PhoneImage" class="Work_Projects-Project-Phone">
+
+                                    <img src="./assets/Clients/petrolicious_logo-min.png" alt="Arrow Right" class="Work_Projects-Project-Logo Work-Petrolicious-Logo">
+
+                                    <img src="./assets/ArrowRightWhite.svg" alt="Arrow Right" class="Work_Projects-Project-Arrow">
+
+                                    <p class="Work-Projects-Project-ViewWork">View work</p>
+                                    <p class="Work_Projects-Project-Description">
+
+                                        Media & Content
+                                        <br>
+                                        Web Redesign
+                                    </p>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Section3 -->
+                    <div class="Work_Projects-Section">
+                        <div class="Work_Projects-Project Project5">
+                            <a href="./Project.html" class="Work_Projects-Project-Link">
+                                <div class="Work_Projects-Project-Wrap">
+
+                                    <img src="./assets/Work/Phones/extend_phone.png" alt="PhoneImage" class="Work_Projects-Project-Phone">
+
+                                    <img src="./assets/Work/Logos/extend_logo.png" alt="Arrow Right" class="Work_Projects-Project-Logo Work-Extend-Logo">
+
+                                    <img src="./assets/ArrowRightWhite.svg" alt="Arrow Right" class="Work_Projects-Project-Arrow">
+
+                                    <p class="Work-Projects-Project-ViewWork">View work</p>
+                                    <p class="Work_Projects-Project-Description">
+
+                                        Art Direction
+                                        <br>
+                                        UX Design
+                                    </p>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="Work_Projects-Project Project6">
+                            <a href="./Project.html" class="Work_Projects-Project-Link">
+                                <div class="Work_Projects-Project-Wrap">
+
+                                    <img src="./assets/Work/Phones/patronofthenew_phone.png" alt="PhoneImage" class="Work_Projects-Project-Phone">
+
+                                    <img src="./assets/Work/Logos/patronofthenew_logo.png" alt="Arrow Right" class="Work_Projects-Project-Logo Work-PatronofTheNew-Logo">
+
+                                    <img src="./assets/ArrowRightBlack.svg" alt="Arrow Right" class="Work_Projects-Project-Arrow">
+                                    
+                                    <p class="Work-Projects-Project-ViewWork Color-Black">View work</p>
+
+                                    <p class="Work_Projects-Project-Description Color-Black">
+                                        E-Commerce
+                                        <br>
+                                        Mobile
+                                    </p>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Section4 -->
+                    <div class="Work_Projects-Section">
+                       <div class="Work_Projects-Project Project7">
+                           <a href="./Project.html" class="Work_Projects-Project-Link">
+                                <div class="Work_Projects-Project-Wrap">
+
+                                    <img src="./assets/Work/Phones/Shortcut-Phone-min.png" alt="PhoneImage" class="Work_Projects-Project-Phone">
+
+                                    <img src="./assets/Work/Logos/shortcut-logo-1.png" alt="Logo" class="Work_Projects-Project-Logo Work-Shortcut-Logo">
+
+                                    <img src="./assets/ArrowRightWhite.svg" alt="Arrow Right" class="Work_Projects-Project-Arrow">
+                                    
+                                    <p class="Work-Projects-Project-ViewWork">View work</p>
+
+                                    <p class="Work_Projects-Project-Description">
+                                        Art Direction
+                                        <br>
+                                        UX Design
+                                    </p>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="Work_Projects-Project NewClient">
+                            <a href="./contact.html" class="Work_Projects-Project-Link">
+                                <div class="Work_Projects-Project-Wrap">
+                                    <p class="Work-Projects-Project-Text">Let's Create great<br>
+                                    work.</p>
+                                    
+                                    <p class="Work_Projects-Project-Logo">New Client</p>
+                                    <img src="./assets/ArrowRightWhite.svg" alt="Arrow Right" class="Work_Projects-Project-Arrow">
+                                    <p class="Work-Projects-Project-ViewWork">Start a project</p>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+           
 
         </div>
         <!-- Content End -->
+
+        <!-- Footer -->
+        <Footer class="Footer" id="Footer">
+            <div class="Footer_Wrap">
+                <!-- Background -->
+                <div class="Footer_Background" id="Footer_Background"></div>
+                <!-- Left Fixed -->
+                <div class="Footer_Constants-LeftFixed">
+                    <div class="Footer_Constants-LeftFixedWrap">
+                        <div class="Footer_Constants-LeftFixed-AddressWrap">
+                            <p class="Footer_Constants-LeftFixed-Address">
+                                26 Broadway, New York, NY
+                            </p>
+                        </div>
+                        <div class="Footer_Constants-LeftFixed-Socials">
+                            <div class="Social1">
+                                <a href="">
+                                    <img src="./assets/InstagramIconWhite.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="Social2">
+                                <a href="">
+                                    <img src="./assets/dribbble-ball-mark-White.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Content -->
+                <div class="Footer_Content">
+                    <div class="Footer_Content-Wrap">
+                        <div class="Footer_Content-Plain">
+                            <p class="Footer_Content-Connect-Email">
+                                        Or email us at
+                                        <br>
+                                        connect@monstersandsilk.co
+                                    </p>
+                            <div class="Footer_Content-Connect">
+                                <a href="./contact.html" class="Footer_Content-Connect-Header">
+                                    <p class="Footer_Content-Connect-Header-Text">
+                                        <span class="Color-Blue">Connect</span>
+                                        <br>
+                                        with us.
+                                    </p>
+                                    <img src="./assets/BentArrowBlue.svg" alt="Bent Arrow" class="Footer_Content-Connect-Header-Arrow">
+
+                                    </img>
+                                </a>
+                            </div>
+                            <div class="Footer_Content-Right">
+                                <div class="Footer_Content-Menu">
+                                    <p class="Footer_Content-Menu-Title">Menu</p>
+                                    <ul class="Footer_Content-Menu-List">
+                                        <li class="Footer_Content-Menu-List-Item">
+                                            <a href="./about.html" class="Footer_Content-Menu-List-Link">About</a>
+                                        </li>
+                                        <li class="Footer_Content-Menu-List-Item">
+                                            <a href="./work.html" class="Footer_Content-Menu-List-Link">Our work</a>
+                                        </li>
+                                        <li class="Footer_Content-Menu-List-Item">
+                                            <a href="./philosophy.html" class="Footer_Content-Menu-List-Link">Philosophy</a>
+                                        </li>
+                                        <li class="Footer_Content-Menu-List-Item">
+                                            <a href="./services.html" class="Footer_Content-Menu-List-Link">Services</a>
+                                        </li>
+                                        <li class="Footer_Content-Menu-List-Item">
+                                            <a href="./contact.html" class="Footer_Content-Menu-List-Link">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="Footer_Content-Location">
+                                    <p class="Footer_Content-Location-Title">Office</p>
+                                    <p class="Footer_Content-Location-Address">26 Broadway, 11th floor</p>
+                                    <p class="Footer_Content-Location-Address">New York, NY 10004</p>
+                                    <p class="Footer_Content-Location-Address">United States</p>
+                                </div>
+                            </div>
+                            <p class="Footer_Content-Connect-Email-Mobile">
+                                Or email us at
+                                <br>
+                                connect@monstersandsilk.co
+                            </p>
+                        </div>
+                        <div class="Footer_Content-White" id="Footer_Content-White">
+                            <p class="Footer_Content-Connect-Email Footer_Color-White">
+                                        Or email us at
+                                        <br>
+                                        connect@monstersandsilk.co
+                                    </p>
+                            <div class="Footer_Content-Connect">
+                                <a href="./contact.html" class="Footer_Content-Connect-Header">
+                                    <p class="Footer_Content-Connect-Header-Text Footer_Color-White">
+                                        <span class="Color-Blue Footer_Color-White">Connect</span>
+                                        <br>
+                                        with us.
+                                    </p>
+                                    <img src="./assets/BentArrowWhite.svg" alt="Bent Arrow" class="Footer_Content-Connect-Header-Arrow">
+
+                                    </img>
+                                </a>
+                            </div>
+                            <div class="Footer_Content-Right">
+                                <div class="Footer_Content-Menu">
+                                    <p class="Footer_Content-Menu-Title Footer_Color-White">Menu</p>
+                                    <ul class="Footer_Content-Menu-List">
+                                        <li class="Footer_Content-Menu-List-Item">
+                                            <a href="./about.html" class="Footer_Content-Menu-List-Link Footer_Color-White">About</a>
+                                        </li>
+                                        <li class="Footer_Content-Menu-List-Item">
+                                            <a href="./work.html" class="Footer_Content-Menu-List-Link Footer_Color-White">Our work</a>
+                                        </li>
+                                        <li class="Footer_Content-Menu-List-Item">
+                                            <a href="./philosophy.html" class="Footer_Content-Menu-List-Link Footer_Color-White">Philosophy</a>
+                                        </li>
+                                        <li class="Footer_Content-Menu-List-Item">
+                                            <a href="./services.html" class="Footer_Content-Menu-List-Link Footer_Color-White">Services</a>
+                                        </li>
+                                        <li class="Footer_Content-Menu-List-Item">
+                                            <a href="./contact.html" class="Footer_Content-Menu-List-Link Footer_Color-White">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="Footer_Content-Location">
+                                    <p class="Footer_Content-Location-Title Footer_Color-White">Office</p>
+                                    <p class="Footer_Content-Location-Address Footer_Color-White">26 Broadway, 11th floor</p>
+                                    <p class="Footer_Content-Location-Address Footer_Color-White">New York, NY 10004</p>
+                                    <p class="Footer_Content-Location-Address Footer_Color-White">United States</p>
+                                </div>
+                            </div>
+                            <p class="Footer_Content-Connect-Email-Mobile Footer_Color-White">
+                                Or email us at
+                                <br>
+                                connect@monstersandsilk.co
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </Footer>
     </div>
     <script src="index.js"></script>
 </body>
