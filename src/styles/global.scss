@@ -605,6 +605,12 @@ ul {
     }
 }
 
+@media screen and (max-width: 800px){
+    .Footer_Content {
+        padding: 40px 30px;
+    }
+}
+
 @media screen and (max-width: 700px){
     .Footer_Content-White {
         display: none;
@@ -612,22 +618,20 @@ ul {
     .Footer_Background {
         display: none;
     }
-}
-
-
-@media screen and (max-width: 800px){
-    .Footer_Content {
-        padding: 40px 30px;
-    }
-}
-
-@media screen and (max-width: 500px){
     .Footer_Content-Connect-Header-Text {
         font-size: 50px;
     }
     .Footer_Content-Connect-Header-Arrow {
         width: 50px;
     }
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    
+    
 }
 
 

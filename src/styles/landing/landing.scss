@@ -469,6 +469,10 @@
                         top: -20px;
                         transition: all .4s ease-in;
                     }
+                        .Shrink-Landing-Phone {
+                            width: 400px;
+                            top: 0px;
+                        }
 
 @media screen and (max-width: 1600px){
     .Landing_CaseStudy-Description {
@@ -698,6 +702,7 @@
                     .Landing_Services-Photo1 {
                         width: 50%;
                         height: 19vw;
+                        margin-top: 30px;
                     }
 
                     .Landing_Services-Photo2 {
@@ -721,6 +726,9 @@
     }
     .Landing_Services-IntroRight {
         padding-left: 0px;
+    }
+    .Landing_Services-BreakDown {
+        margin-top: 10px;
     }
 }
 
