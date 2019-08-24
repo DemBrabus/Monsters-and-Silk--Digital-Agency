@@ -19,7 +19,8 @@
             font-size: 70px;
             font-weight: 600;
             letter-spacing: -3px;
-            transition: all .4s ease-in;
+            opacity: 0;
+            transition: all .6s ease-in;
         }
 
             .Contact_Intro-Right {
@@ -29,8 +30,9 @@
                 font-size: 24px;
                 font-weight: 500;
                 line-height: 46px;
+                opacity: 0;
                 color: rgb(137, 137, 137);
-                transition: all .4s ease-in;
+                transition: all .6s ease-in;
             }
 
 
@@ -94,11 +96,14 @@
 
                 .Contact_Form-Item-Container {
                     width: 100%;
+                    opacity: 0;
+                    transition: opacity;
                 }
 
                     .Contact_Form-item {
                         width: 100%;
                         position: relative;
+                        
                     }
                         .Label1 {
                             margin-bottom: 30px;
@@ -128,6 +133,11 @@
                                     color: rgb(137, 137, 137);
                                     transition: all .4s ease-in;
                                 }
+
+                        .Contact_Form-Sub-Item-Container {
+                            opacity: 0;
+                            transition: opacity;
+                        }
 
                        
 

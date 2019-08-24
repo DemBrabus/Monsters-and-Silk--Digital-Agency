@@ -16,6 +16,8 @@
         padding-top: 120px;
         padding-right: 50px;
         transition: font-size .5s ease-in;
+        opacity: 0;
+        transition: opacity;
     }
 
         .Color-Blue {
@@ -40,12 +42,16 @@
             line-height: 46px;
             color: rgb(137, 137, 137);
             margin-bottom: 30px;
+            opacity: 0;
+            transition: opacity;
         }
 
         .AboutIntro_CTA {
             height: 40px;
             display: flex;
             align-items: center;
+            opacity: 0;
+            transition: opacity;
         }
 
             .AboutIntro_CTA-Arrow {
@@ -149,6 +155,8 @@
 .AboutGif {
     width: 100%;
     margin: 100px 0px;
+    opacity: 0;
+    transition: all;
 }
 
     .AboutGif-Wrap {

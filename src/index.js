@@ -1,6 +1,6 @@
 
 
-import GlobalAnimations from './scripts/Global/Animations/GlobalAnimations';
+import MainAnimations from './scripts/Global/Animations/MainAnimations';
  
 import MobileNav from './scripts/mobileNav/mobileNav';
 

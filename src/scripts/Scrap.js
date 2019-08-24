@@ -32,20 +32,20 @@ const controller = new ScrollMagic.Controller();
 
 //Projects Test
 
-// const Project1Scene = new ScrollMagic.Scene({
-//     triggerElement: '#Project1Wrap',
-//     reverse: false,
-//     triggerHook: 0.4
-// })
-// .setClassToggle('#Project1Wrap', 'Expand')
-// .addIndicators({
-//     name: 'Project',
-//     colorTrigger: 'black',
-//     indent: 0,
-//     colorStart: 'green',
-//     colorEnd: 'pink'
-// })
-// .addTo(controller);
+const Project1Scene = new ScrollMagic.Scene({
+    triggerElement: '#Project1Wrap',
+    reverse: false,
+    triggerHook: 0.4
+})
+.setClassToggle('#Project1Wrap', 'Expand')
+.addIndicators({
+    name: 'Project',
+    colorTrigger: 'black',
+    indent: 0,
+    colorStart: 'green',
+    colorEnd: 'pink'
+})
+.addTo(controller);
 
 
 
