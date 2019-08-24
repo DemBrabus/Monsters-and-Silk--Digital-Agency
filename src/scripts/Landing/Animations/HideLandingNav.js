@@ -21,9 +21,9 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
         HideLandingHeaderTl.reverse();
-  } else {
+  } else if (currentScrollPos > 200) {
     HideLandingHeaderTl.play();
-  }
+  } 
   prevScrollpos = currentScrollPos;
 }
 
