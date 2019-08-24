@@ -20986,7 +20986,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   var LandingProject1Scene = new _scrollmagic.default.Scene({
     triggerElement: '#LandingProject1',
     reverse: false,
-    triggerHook: .65
+    triggerHook: .75
   }).setClassToggle('#Landing_CaseStudy-Project-Cover1', 'Slide-Right') // .addIndicators({
   //     name: 'Project1',
   //     colorTrigger: 'black',
@@ -20999,7 +20999,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   var LandingProject2Scene = new _scrollmagic.default.Scene({
     triggerElement: '#LandingProject2',
     reverse: false,
-    triggerHook: .65
+    triggerHook: .75
   }).setClassToggle('#Landing_CaseStudy-Project-Cover2', 'Slide-Right') // .addIndicators({
   //     name: 'Project2',
   //     colorTrigger: 'black',
@@ -21012,7 +21012,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   var LandingProject3Scene = new _scrollmagic.default.Scene({
     triggerElement: '#LandingProject3',
     reverse: false,
-    triggerHook: .65
+    triggerHook: .75
   }).setClassToggle('#Landing_CaseStudy-Project-Cover3', 'Slide-Right') // .addIndicators({
   //     name: 'Project3',
   //     colorTrigger: 'black',
@@ -21025,7 +21025,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   var LandingProject4Scene = new _scrollmagic.default.Scene({
     triggerElement: '#LandingProject4',
     reverse: false,
-    triggerHook: .65
+    triggerHook: .75
   }).setClassToggle('#Landing_CaseStudy-Project-Cover4', 'Slide-Right') // .addIndicators({
   //     name: 'Project4',
   //     colorTrigger: 'black',
@@ -21038,7 +21038,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   var LandingProject5Scene = new _scrollmagic.default.Scene({
     triggerElement: '#LandingProject5',
     reverse: false,
-    triggerHook: .65
+    triggerHook: .75
   }).setClassToggle('#Landing_CaseStudy-Project-Cover5', 'Slide-Right') // .addIndicators({
   //     name: 'Project5',
   //     colorTrigger: 'black',
@@ -21155,7 +21155,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57819" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59543" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

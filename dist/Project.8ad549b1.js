@@ -16322,53 +16322,42 @@ var _EasePack = require("./EasePack.js");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-},{"./TweenLite.js":"../node_modules/gsap/TweenLite.js","./TweenMaxBase.js":"../node_modules/gsap/TweenMaxBase.js","./TimelineLite.js":"../node_modules/gsap/TimelineLite.js","./TimelineMax.js":"../node_modules/gsap/TimelineMax.js","./AttrPlugin.js":"../node_modules/gsap/AttrPlugin.js","./BezierPlugin.js":"../node_modules/gsap/BezierPlugin.js","./ColorPropsPlugin.js":"../node_modules/gsap/ColorPropsPlugin.js","./CSSPlugin.js":"../node_modules/gsap/CSSPlugin.js","./CSSRulePlugin.js":"../node_modules/gsap/CSSRulePlugin.js","./DirectionalRotationPlugin.js":"../node_modules/gsap/DirectionalRotationPlugin.js","./EaselPlugin.js":"../node_modules/gsap/EaselPlugin.js","./EndArrayPlugin.js":"../node_modules/gsap/EndArrayPlugin.js","./ModifiersPlugin.js":"../node_modules/gsap/ModifiersPlugin.js","./PixiPlugin.js":"../node_modules/gsap/PixiPlugin.js","./RoundPropsPlugin.js":"../node_modules/gsap/RoundPropsPlugin.js","./ScrollToPlugin.js":"../node_modules/gsap/ScrollToPlugin.js","./TextPlugin.js":"../node_modules/gsap/TextPlugin.js","./Draggable.js":"../node_modules/gsap/Draggable.js","./EasePack.js":"../node_modules/gsap/EasePack.js"}],"scripts/About/Animations/AboutAnimations.js":[function(require,module,exports) {
+},{"./TweenLite.js":"../node_modules/gsap/TweenLite.js","./TweenMaxBase.js":"../node_modules/gsap/TweenMaxBase.js","./TimelineLite.js":"../node_modules/gsap/TimelineLite.js","./TimelineMax.js":"../node_modules/gsap/TimelineMax.js","./AttrPlugin.js":"../node_modules/gsap/AttrPlugin.js","./BezierPlugin.js":"../node_modules/gsap/BezierPlugin.js","./ColorPropsPlugin.js":"../node_modules/gsap/ColorPropsPlugin.js","./CSSPlugin.js":"../node_modules/gsap/CSSPlugin.js","./CSSRulePlugin.js":"../node_modules/gsap/CSSRulePlugin.js","./DirectionalRotationPlugin.js":"../node_modules/gsap/DirectionalRotationPlugin.js","./EaselPlugin.js":"../node_modules/gsap/EaselPlugin.js","./EndArrayPlugin.js":"../node_modules/gsap/EndArrayPlugin.js","./ModifiersPlugin.js":"../node_modules/gsap/ModifiersPlugin.js","./PixiPlugin.js":"../node_modules/gsap/PixiPlugin.js","./RoundPropsPlugin.js":"../node_modules/gsap/RoundPropsPlugin.js","./ScrollToPlugin.js":"../node_modules/gsap/ScrollToPlugin.js","./TextPlugin.js":"../node_modules/gsap/TextPlugin.js","./Draggable.js":"../node_modules/gsap/Draggable.js","./EasePack.js":"../node_modules/gsap/EasePack.js"}],"scripts/Project/ProjectAnimations/ProjectAnimations.js":[function(require,module,exports) {
 "use strict";
 
 var _all = require("gsap/all");
 
+// Project
 (function () {
-  //GSAP --------------- --------------
-  //Variables ----- ---- --- -- -
-  var AboutHeader = document.getElementById('About_Intro-Header');
-  var AboutIntroText = document.getElementById('AboutIntro_Text');
-  var AboutIntroCTA = document.getElementById('AboutIntro_CTA');
-  var AboutGif = document.getElementById('AboutGif');
-  var AboutIntroTl = new _all.TimelineMax();
-  AboutIntroTl.add('wave1').set(AboutHeader, {
+  //GSAP --------- ----------- -------------
+  //Variables ------ -----
+  var ProjectHeader = document.getElementById('Project_Intro-Header');
+  var ProjectRight = document.getElementById('Project_Intro-Right'); //Variables ------ -----
+  //Project Intro
+
+  var ProjectIntroTl = new _all.TimelineMax();
+  ProjectIntroTl.add('wave1').set(ProjectHeader, {
     y: 50
-  }, 'wave1').set(AboutIntroText, {
+  }, 'wave1').set(ProjectRight, {
     y: 50
-  }, 'wave1').set(AboutIntroCTA, {
-    y: 50
-  }, 'wave1').set(AboutGif, {
-    y: 50
-  }, 'wave1').to(AboutHeader, .6, {
+  }, 'wave1').add('wave2').to(ProjectHeader, .6, {
     opacity: 1,
     y: 0,
     ease: _all.Power1.easeInOut,
     delay: .5
-  }).to(AboutIntroText, .6, {
-    opacity: 1,
-    y: 0,
-    ease: _all.Power1.easeInOut
-  }, '-=.4').to(AboutIntroCTA, .6, {
-    opacity: 1,
-    y: 0,
-    ease: _all.Power1.easeInOut
-  }, '-=.5').to(AboutGif, .6, {
+  }, 'wave2').to(ProjectRight, .6, {
     opacity: 1,
     y: 0,
     ease: _all.Power1.easeInOut
   }, '-=.5');
 })();
-},{"gsap/all":"../node_modules/gsap/all.js"}],"scripts/About/About.js":[function(require,module,exports) {
+},{"gsap/all":"../node_modules/gsap/all.js"}],"scripts/Project/Project.js":[function(require,module,exports) {
 "use strict";
 
-var _AboutAnimations = _interopRequireDefault(require("./Animations/AboutAnimations"));
+var _ProjectAnimations = _interopRequireDefault(require("./ProjectAnimations/ProjectAnimations"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Animations/AboutAnimations":"scripts/About/Animations/AboutAnimations.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./ProjectAnimations/ProjectAnimations":"scripts/Project/ProjectAnimations/ProjectAnimations.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -16571,5 +16560,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","scripts/About/About.js"], null)
-//# sourceMappingURL=/About.6c2dc4a4.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","scripts/Project/Project.js"], null)
+//# sourceMappingURL=/Project.8ad549b1.js.map

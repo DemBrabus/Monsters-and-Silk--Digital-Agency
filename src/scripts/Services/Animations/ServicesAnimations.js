@@ -38,21 +38,28 @@ import "scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators";
     //ScrollMagic
         const controller = new ScrollMagic.Controller();
 
-        const Services1Scene = new ScrollMagic.Scene({
-            triggerElement: '#Service1',
-            reverse: false,
-            triggerHook: .95
-        })
-        .addClassToggle('#Services1', 'Fade-In')
-        .addTo(controller);
-
-
         const Services2Scene = new ScrollMagic.Scene({
             triggerElement: '#Service2',
             reverse: false,
-            triggerHook: .95
+            triggerHook: .87
         })
-        .addClassToggle('#Services2', 'Fade-In')
+        .setClassToggle('#Service2', 'Fade-In')
+        .addTo(controller);
+
+        const Services3Scene = new ScrollMagic.Scene({
+            triggerElement: '#Service3',
+            reverse: false,
+            triggerHook: .87
+        })
+        .setClassToggle('#Service3', 'Fade-In')
+        .addTo(controller);
+
+        const Services4Scene = new ScrollMagic.Scene({
+            triggerElement: '#Service4',
+            reverse: false,
+            triggerHook: .87
+        })
+        .setClassToggle('#Service4', 'Fade-In')
         .addTo(controller);
 
 

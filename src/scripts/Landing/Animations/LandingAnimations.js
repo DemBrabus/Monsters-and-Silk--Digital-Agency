@@ -84,7 +84,7 @@ const controller = new ScrollMagic.Controller();
         const LandingProject1Scene = new ScrollMagic.Scene({
             triggerElement: '#LandingProject1',
             reverse: false,
-            triggerHook: .65,
+            triggerHook: .75,
         })
         .setClassToggle('#Landing_CaseStudy-Project-Cover1', 'Slide-Right')
         // .addIndicators({
@@ -100,7 +100,7 @@ const controller = new ScrollMagic.Controller();
         const LandingProject2Scene = new ScrollMagic.Scene({
             triggerElement: '#LandingProject2',
             reverse: false,
-            triggerHook: .65,
+            triggerHook: .75,
         })
         .setClassToggle('#Landing_CaseStudy-Project-Cover2', 'Slide-Right')
         // .addIndicators({
@@ -116,7 +116,7 @@ const controller = new ScrollMagic.Controller();
         const LandingProject3Scene = new ScrollMagic.Scene({
             triggerElement: '#LandingProject3',
             reverse: false,
-            triggerHook: .65,
+            triggerHook: .75,
         })
         .setClassToggle('#Landing_CaseStudy-Project-Cover3', 'Slide-Right')
         // .addIndicators({
@@ -132,7 +132,7 @@ const controller = new ScrollMagic.Controller();
         const LandingProject4Scene = new ScrollMagic.Scene({
             triggerElement: '#LandingProject4',
             reverse: false,
-            triggerHook: .65,
+            triggerHook: .75,
         })
         .setClassToggle('#Landing_CaseStudy-Project-Cover4', 'Slide-Right')
         // .addIndicators({
@@ -148,7 +148,7 @@ const controller = new ScrollMagic.Controller();
         const LandingProject5Scene = new ScrollMagic.Scene({
             triggerElement: '#LandingProject5',
             reverse: false,
-            triggerHook: .65,
+            triggerHook: .75,
         })
         .setClassToggle('#Landing_CaseStudy-Project-Cover5', 'Slide-Right')
         // .addIndicators({

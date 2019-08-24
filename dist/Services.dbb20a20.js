@@ -20178,16 +20178,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   }, '-=.4'); //ScrollMagic
 
   var controller = new _scrollmagic.default.Controller();
-  var Services1Scene = new _scrollmagic.default.Scene({
-    triggerElement: '#Service1',
-    reverse: false,
-    triggerHook: .95
-  }).addClassToggle('#Services1', 'Fade-In').addTo(controller);
   var Services2Scene = new _scrollmagic.default.Scene({
     triggerElement: '#Service2',
     reverse: false,
-    triggerHook: .95
-  }).addClassToggle('#Services2', 'Fade-In').addTo(controller);
+    triggerHook: .87
+  }).setClassToggle('#Service2', 'Fade-In').addTo(controller);
+  var Services3Scene = new _scrollmagic.default.Scene({
+    triggerElement: '#Service3',
+    reverse: false,
+    triggerHook: .87
+  }).setClassToggle('#Service3', 'Fade-In').addTo(controller);
+  var Services4Scene = new _scrollmagic.default.Scene({
+    triggerElement: '#Service4',
+    reverse: false,
+    triggerHook: .87
+  }).setClassToggle('#Service4', 'Fade-In').addTo(controller);
 })();
 },{"gsap/all":"../node_modules/gsap/all.js","scrollmagic":"../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"scripts/Services/Services.js":[function(require,module,exports) {
 "use strict";
@@ -20223,7 +20228,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57819" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59543" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
